@@ -1,0 +1,700 @@
+*{
+padding: 0;
+margin: 0;
+}
+
+@font-face {
+    font-family:"ManropeReg" ;
+    src: url(fonts/Manrope-Regular.ttf);
+}
+
+#logo{
+    width: 62.56px;
+    height: 16.02px;
+    margin-left: 100px;
+}
+
+.User{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: end;
+}
+
+.profile-picture{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.user-info{
+    font-size: 12px;
+    color: white;
+}
+
+.navbar{
+    background-color: rgba(4, 12, 24, 0.8); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Sign{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+        margin-left: 40px;
+
+}
+.signin-link {
+  text-decoration: none;
+}
+
+p{
+    font-family: ManropeReg;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+button{
+    background-color:#FF4820 ;
+    font-family: ManropeReg;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;   
+    width: 145px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 100px;
+    cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover{
+  background-color: #e53e14;
+}
+
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 30px; 
+}
+
+.links a {
+  font-family: ManropeReg;
+  font-weight: 500;
+  font-size: 15px;
+  color: white;
+}
+
+.nav-link:active{
+ color: #FF4820;
+}
+
+.logo-button{
+    background-color: #040C18;
+    font-family: ManropeReg;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;   
+    width: 145px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    margin-right: -30px;
+}
+
+/* Extra small phones */
+@media (max-width: 400px) {
+#logo{
+    width: 55px;
+    height: 16.02px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.navbar{
+    background-color: rgba(4, 12, 24, 0.8); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Sign{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 50px;
+}
+p{
+    font-family: ManropeReg;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+button{
+    background-color:#FF4820 ;
+    font-family: ManropeReg;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;   
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 15px;
+}
+.links {
+  display: flex;
+  align-items: center;
+  gap: 30px; 
+}
+
+.links a {
+  font-family: ManropeReg;
+  font-weight: 500;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:active{
+ color: #FF4820;
+}
+
+.logo-button{
+    background-color: #040C18;
+    font-family: ManropeReg;
+    font-weight: 500;
+    font-size: 13px;
+    color: white;   
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin-right: -30px;
+}
+}
+
+/* Small phones */
+@media (min-width: 401px) and (max-width: 576px) {
+    #logo{
+    width: 55px;
+    height: 16.02px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.navbar{
+    background-color: rgba(4, 12, 24, 0.8); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Sign{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 50px;
+}
+p{
+    font-family: ManropeReg;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+button{
+    background-color:#FF4820 ;
+    font-family: ManropeReg;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;   
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 15px;
+}
+.links {
+  display: flex;
+  align-items: center;
+  gap: 30px; 
+}
+
+.links a {
+  font-family: ManropeReg;
+  font-weight: 500;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:active{
+ color: #FF4820;
+}
+
+.logo-button{
+    background-color: #040C18;
+    font-family: ManropeReg;
+    font-weight: 500;
+    font-size: 13px;
+    color: white;   
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin-right: -30px;
+}
+}
+
+/* Tablets (portrait) */
+@media (min-width: 577px) and (max-width: 768px) {
+    #logo{
+    width: 100px;
+    height: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.navbar{
+    background-color: rgba(4, 12, 24, 0.8); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Sign{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 100px;
+}
+p{
+    font-family: ManropeReg;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+button{
+    background-color:#FF4820 ;
+    font-family: ManropeReg;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;   
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 15px;
+}
+.links {
+  display: flex;
+  align-items: center;
+  gap: 50px; 
+}
+
+.links a {
+  font-family: ManropeReg;
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:active{
+ color: #FF4820;
+}
+
+.logo-button{
+    background-color: #040C18;
+    font-family: ManropeReg;
+    font-weight: 500;
+    font-size: 13px;
+    color: white;   
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin-right: -30px;
+}
+}
+
+/* Tablets (landscape) / small laptops */
+@media (min-width: 769px) and (max-width: 992px) {
+    #logo{
+    width: 100px;
+    height: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.navbar{
+    background-color: rgba(4, 12, 24, 0.8); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Sign{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 50px;
+}
+p{
+    font-family: ManropeReg;
+    font-weight: 500;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+button{
+    background-color:#FF4820 ;
+    font-family: ManropeReg;
+    font-weight: 500;
+    font-size: 30px;
+    color: white;   
+    width: 180px;
+    height: 65px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 15px;
+}
+.links {
+  display: flex;
+  align-items: center;
+  gap: 40px; 
+}
+
+.links a {
+  font-family: ManropeReg;
+  font-weight: 500;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:active{
+ color: #FF4820;
+}
+
+.logo-button{
+    background-color: #040C18;
+    font-family: ManropeReg;
+    font-weight: 500;
+    font-size: 13px;
+    color: white;   
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin-right: -30px;
+}
+}
+
+/* Laptops / desktops */
+@media (min-width: 993px) and (max-width: 1200px) {
+    #logo{
+    width: 100px;
+    height: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.navbar{
+    background-color: rgba(4, 12, 24, 0.8); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Sign{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 50px;
+}
+p{
+    font-family: ManropeReg;
+    font-weight: 500;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+button{
+    background-color:#FF4820 ;
+    font-family: ManropeReg;
+    font-weight: 500;
+    font-size: 25px;
+    color: white;   
+    width: 150px;
+    height: 65px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 15px;
+}
+.links {
+  display: flex;
+  align-items: center;
+  gap: 50px; 
+}
+
+.links a {
+  font-family: ManropeReg;
+  font-weight: 500;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:active{
+ color: #FF4820;
+}
+
+.logo-button{
+    background-color: #040C18;
+    font-family: ManropeReg;
+    font-weight: 500;
+    font-size: 13px;
+    color: white;   
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin-right: -30px;
+}
+}
+
+/* Large desktops */
+@media (min-width: 1201px) and (max-width: 1400px) {
+    #logo{
+    width: 55px;
+    height: 16.02px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.navbar{
+    background-color: rgba(4, 12, 24, 0.8); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Sign{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 50px;
+}
+p{
+    font-family: ManropeReg;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+button{
+    background-color:#FF4820 ;
+    font-family: ManropeReg;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;   
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 15px;
+}
+.links {
+  display: flex;
+  align-items: center;
+  gap: 30px; 
+}
+
+.links a {
+  font-family: ManropeReg;
+  font-weight: 500;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:active{
+ color: #FF4820;
+}
+
+}
+
+/* Extra large screens */
+@media (min-width: 1401px) {
+    #logo{
+    width: 110px;
+    height: 80px;
+    margin-left: 150px;
+    margin-right: 50px;
+}
+
+.navbar{
+    background-color: rgba(4, 12, 24, 0.8); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Sign{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 50px;
+}
+p{
+    font-family: ManropeReg;
+    font-weight: 500;
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.navbar button{
+    background-color:#FF4820 ;
+    font-family: ManropeReg;
+    font-weight: 500;
+    font-size: 28px;
+    color: white;   
+    width: 150px;
+    height: 65px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 15px;
+}
+.links {
+  display: flex;
+  align-items: center;
+  gap: 60px; 
+}
+
+.links a {
+  font-family: ManropeReg;
+  font-weight: 500;
+  font-size: 28px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:active{
+ color: #FF4820;
+}
+}
