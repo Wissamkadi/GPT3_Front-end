@@ -138,7 +138,6 @@ overflow: hidden; /*to hide the eclipse */
     font-weight: 500;
     color: #81AFDD;
     text-align: start;
-    position : absolute;
 }
 .title{
    display: grid;
