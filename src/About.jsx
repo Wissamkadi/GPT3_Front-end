@@ -17,9 +17,7 @@ return(
   </div>
   <div className='title'>
     <h2>The possibilities are beyond <br></br>your imagination</h2>
-<a href="#blog">
   <p>Explore The Library</p>
-</a>
 
   </div>
   <div className='box2'>
