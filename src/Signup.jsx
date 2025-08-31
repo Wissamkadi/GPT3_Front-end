@@ -15,7 +15,9 @@ function Signup() {
   const [emailMessage ,setEmailmessage] = useState("")
   const [PasswordMessage ,setPasswordmessage] = useState("")
   const [password , setPassword] = useState("")
+const API_BASE = "https://gpt3-back-end-3.onrender.com";
 
+  
  const emailInput = (event) => {
        setEmail(event.target.value)
        setEmailmessage("")
@@ -33,7 +35,7 @@ function Signup() {
     }
 
     try{
-      const resp = await fetch("http://localhost:5000/signup",{
+      const resp = await fetch(`${API_BASE}/signup`,{
         method : "POST",
         headers : {
           "Content-Type" : "application/json"
