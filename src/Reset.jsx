@@ -11,7 +11,7 @@ function Reset(){
     const [newPassword , setNewPassword] = useState("")
     const [newPassword2 , setNewPassword2] = useState("")
     const [message, setMessage] = useState("")
-    const API_BASE = "https://gpt3-back-end-3.onrender.com";
+    const API_BASE = "https://gpt3-back-end-4.onrender.com";
 
     const emailInput = (event) => {
        setEmail(event.target.value)
