@@ -65,7 +65,7 @@ if (!resp.ok) {
    console.log(decoded);
 
    try{
-     const resp = await fetch("http://localhost:5000/auth/google/callback", {
+     const resp = await fetch(`${API_BASE}/auth/google/callback`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ token: credentialResponse.credential }),
