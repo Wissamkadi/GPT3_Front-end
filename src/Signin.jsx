@@ -11,6 +11,7 @@ function Signin() {
     const [emailMessage2 ,setEmailmessage2] = useState("")
     const [PasswordMessage2 ,setPasswordmessage2] = useState("")
     const [password2 , setPassword2] = useState("")
+    const API_BASE = "https://gpt3-back-end-3.onrender.com";
   
    const emailInput2 = (event) => {
          setEmail2(event.target.value)
@@ -28,7 +29,7 @@ function Signin() {
          return
       }
      try{
-        const resp = await fetch("http://localhost:5000/signin",{
+        const resp = await fetch(`${API_BASE}/signin`,{
         method : "POST",
         headers : {
           "Content-Type" : "application/json"
@@ -58,7 +59,7 @@ const handleSuccess = async (credentialResponse) => {
    console.log(decoded);
 
    try{
-     const resp = await fetch("http://localhost:5000/auth/google/callback", {
+     const resp = await fetch(`${API_BASE}/auth/google/callback`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ token: credentialResponse.credential }),
