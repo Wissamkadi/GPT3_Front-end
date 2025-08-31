@@ -11,6 +11,7 @@ function Reset(){
     const [newPassword , setNewPassword] = useState("")
     const [newPassword2 , setNewPassword2] = useState("")
     const [message, setMessage] = useState("")
+    const API_BASE = "https://gpt3-back-end-3.onrender.com";
 
     const emailInput = (event) => {
        setEmail(event.target.value)
@@ -27,7 +28,7 @@ function Reset(){
             setcodeMessage("Please enter your verification code")
         }
         try{
-              const res = await fetch("http://localhost:5000/reset", {
+              const res = await fetch(`${API_BASE}/reset`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ email })
@@ -57,7 +58,7 @@ function Reset(){
         }
 
         try{
-             const res = await fetch("http://localhost:5000/verifyCode", {
+             const res = await fetch(`${API_BASE}/verifyCode`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ email, code })
@@ -97,7 +98,7 @@ function Reset(){
      }
 
     try{
-        const res = await fetch("http://localhost:5000/newPassword", {
+        const res = await fetch(`${API_BASE}/newPassword`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ email, newPassword })
