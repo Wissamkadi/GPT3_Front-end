@@ -8,6 +8,7 @@ import atlassian from './assets/atlassian.svg';
 import dropbox from './assets/dropbox.svg';
 import shopify from './assets/shopify.svg';
 import { useNavigate } from 'react-router-dom';
+const API_BASE = "https://gpt3-back-end-4.onrender.com";
 
 function Header() {
       const [email,setEmail] = useState("")
@@ -29,7 +30,7 @@ function Header() {
         }
 
         useEffect(() => {
-          fetch("http://localhost:5000/users/count")
+          fetch(`${API_BASE}/users/count`)
             .then(res => res.json())
             .then(data => setUsercpt(data.count))
             .catch(err => console.error(err));
